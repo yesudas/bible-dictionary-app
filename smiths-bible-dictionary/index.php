@@ -58,7 +58,7 @@
 <p>&nbsp;</p>
 <footer>
 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-		<p class="navbar-text">&nbsp; &nbsp; &copy Copyright since 2016 <a href="http://www.wordofgod.in/">Word of God Ministries</a> 
+		<p class="navbar-text">&nbsp; &nbsp; No Copyright, Freely Copy and Distribute (as per Matthew 10:8), <a target="_blank" href="https://www.wordofgod.in/">www.WordOfGod.in</a> 
 		| <a href="sitemap.php" target="_blank">Sitemap</a> 
 		| Visitors: <?= $visitors2 ?></p>
 	</nav>
