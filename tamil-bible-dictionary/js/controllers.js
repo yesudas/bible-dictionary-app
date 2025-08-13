@@ -51,6 +51,9 @@ angular.module('bookApp.controllers', []).controller('BookController', function(
     $scope.Word = data
     usSpinnerService.stop('spinner-1');
   });
+  $scope.goBack = function() {
+        $window.history.back();
+  };
 }).controller('ContactUsController',function($scope,$state,$stateParams,BookFactory,$timeout){
     $scope.yourname = '';
     $scope.youremail = '';
