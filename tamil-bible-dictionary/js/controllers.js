@@ -50,6 +50,13 @@ angular.module('bookApp.controllers', []).controller('BookController', function(
   BookFactory.chapterById($stateParams.id).then(function(data) {
     $scope.Word = data
     usSpinnerService.stop('spinner-1');
+    // Update SEO tags
+    if (data && data.word) {
+      document.getElementById('dynamic-title').innerText = data.word + ' - ' + $APP_NAME;
+      var desc = 'Meaning and explanation for ' + data.word + ' from the ' + $APP_NAME + '.';
+      var metaDesc = document.getElementById('dynamic-description');
+      if (metaDesc) metaDesc.setAttribute('content', desc);
+    }
   });
   $scope.goBack = function() {
         $window.history.back();

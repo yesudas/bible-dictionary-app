@@ -8,7 +8,8 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="msapplication-tap-highlight" content="no" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tamil Bible Dictionary</title>
+	<title id="dynamic-title">Tamil Bible Dictionary</title>
+<meta id="dynamic-description" name="description" content="Tamil Bible Dictionary" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/textAngular.css"/>
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
