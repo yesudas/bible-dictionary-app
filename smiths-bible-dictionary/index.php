@@ -36,7 +36,9 @@
 					<div class="collapse navbar-collapse" id="b-menu-2">
 						<ul class="nav navbar-nav">
 							<li class="active"><a ui-sref="index"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-							<li><a href="https://wordofgod.in/bibledictionary/" target="_blank"><span class="glyphicon glyphicon-book"> </span> Other Dictionaries</a> </li>
+							<li><a href="https://wordofgod.in/bibledictionary/" target="_blank"><span class="glyphicon glyphicon-list-alt"> </span> Other Dictionaries</a> </li>
+							<li><a href="https://wordofgod.in/bibles/" target="_blank"><span class="glyphicon glyphicon-book"></span> Online Bibles</a></li>
+							<li><a href="https://wordofgod.in/bible-wallpapers/" target="_blank"><span class="glyphicon glyphicon-picture"></span> Bible Wallpapers</a></li>
 							<li><a ui-sref="aboutUs"><span class="glyphicon glyphicon-certificate"></span> About Us</a></li>
 							<li><a ui-sref="contactUs"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
 							<li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li>
