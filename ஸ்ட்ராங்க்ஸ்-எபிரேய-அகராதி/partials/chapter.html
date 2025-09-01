@@ -1,0 +1,14 @@
+<span us-spinner="{radius:20, width:8, length: 16}" spinner-key="spinner-1" spinner-start-active="true"></span>
+
+<div class="quiz-section" ng-show="Word">
+
+  <h1>{{Word.word}}</h1>
+  <div ng-repeat="section in Word.sections">
+    <p ng-bind-html="section.paragraph"></p>
+  </div>
+
+</div>
+
+<p>&nbsp;</p>
+<button class="btn btn-secondary" ng-click="goBack()">Back</button>
+<p>&nbsp;</p>
