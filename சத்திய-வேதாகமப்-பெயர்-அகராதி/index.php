@@ -41,7 +41,7 @@
 							<li><a href="https://wordofgod.in/bible-wallpapers/" target="_blank"><span class="glyphicon glyphicon-picture"></span> Bible Wallpapers</a></li>
 							<li><a ui-sref="aboutUs"><span class="glyphicon glyphicon-certificate"></span> About Us</a></li>
 							<li><a ui-sref="contactUs"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
-							<li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li>
+							<!-- <li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li> -->
 						</ul>
 					</div><!-- /.nav-collapse-->
 				</nav>
@@ -62,7 +62,7 @@
 <footer>
 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 		<p class="navbar-text">&nbsp; &nbsp; No Copyright, Freely Copy and Distribute (as per Matthew 10:8), <a target="_blank" href="https://www.wordofgod.in/">www.WordOfGod.in</a> 
-		| <a href="sitemap.php" target="_blank">Sitemap</a> 
+		<!-- | <a href="sitemap.php" target="_blank">Sitemap</a> -->
 		| Visitors: <?= $visitors2 ?></p>
 	</nav>
 </footer>

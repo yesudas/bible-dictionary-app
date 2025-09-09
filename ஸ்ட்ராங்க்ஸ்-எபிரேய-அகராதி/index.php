@@ -1,5 +1,5 @@
 <?php
-    include 'counter.php';
+     include 'counter.php';
 ?>
 <!DOCTYPE html>
 <html>
