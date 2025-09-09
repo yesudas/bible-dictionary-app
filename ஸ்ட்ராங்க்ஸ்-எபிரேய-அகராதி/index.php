@@ -16,6 +16,16 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css"/>
 	<style type="text/css">
 	/*body { background: #40bce7 !important; }*/
+	.spacer{
+		display: block;
+  		height: 1em;   /* height of one line */
+	}
+	.parts-of-speech{
+		font-size: 16px;
+	}
+	.original-in-english{
+		font-size: 16px;
+	}
 	</style>
 
 </head>

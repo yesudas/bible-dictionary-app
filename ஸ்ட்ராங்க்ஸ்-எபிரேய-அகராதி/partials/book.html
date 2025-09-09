@@ -22,7 +22,7 @@
 </div>
     <div class="list-group">
           <a ui-sref="word({id:word.id, title: word.word})" class="list-group-item" ng-repeat="word in vm.items | filter:searchString">
-            <h4 class="list-group-item-heading">{{word.id}}. {{word.word}}</h4>
+            <h4 class="list-group-item-heading">{{word.word}}</h4>
           </a>
       </div>
     <!-- pager -->
