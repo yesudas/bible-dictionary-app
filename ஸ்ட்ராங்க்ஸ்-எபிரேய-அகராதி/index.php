@@ -94,5 +94,6 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/underscore-min.js"></script>
 	<script type="text/javascript" src="js/supplant.js"></script>
+	<script type="text/javascript" src="js/copy-text.js"></script>
 </body>
 </html>
