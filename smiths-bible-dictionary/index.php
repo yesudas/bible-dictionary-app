@@ -17,9 +17,17 @@
 	<style type="text/css">
 	/*body { background: #40bce7 !important; }*/
 	</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZYHRZG9B8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-8ZYHRZG9B8');
+</script>
 </head>
-<body class="quizzler">
+<body id="top" class="quizzler">
 				<!-- second menu bar -->
 				<nav class="navbar navbar-default navbar-static">
 					<div class="navbar-header">

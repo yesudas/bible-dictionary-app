@@ -16,7 +16,7 @@ if (!$data) {
     exit;
 }
 
-$dbFile = __DIR__ . '/data/contactus.db';
+$dbFile = __DIR__ . '/contactus.db';
 $db = new SQLite3($dbFile);
 
 $stmt = $db->prepare('INSERT INTO contactus (fullname, email, mobile, message, bookname, bookurl) VALUES (:fullname, :email, :mobile, :message, :bookname, :bookurl)');

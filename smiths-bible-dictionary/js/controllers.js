@@ -46,18 +46,20 @@ angular.module('bookApp.controllers', []).controller('BookController', function(
       $scope.vm.items = $scope.vm.dummyItems.slice($scope.vm.pager.startIndex, $scope.vm.pager.endIndex + 1);
   }
 
-}).controller('ChapterController', function($scope, $stateParams, BookFactory, $filter, usSpinnerService, $rootScope, $location, $window) {
+}).controller('ChapterController', function($scope, $stateParams, BookFactory, $filter, usSpinnerService, $rootScope, $location, $window, $anchorScroll) {
   BookFactory.chapterById($stateParams.id).then(function(data) {
     $scope.Word = data
     usSpinnerService.stop('spinner-1');
-  // Update SEO tags
+    // Update SEO tags
     if (data && data.word) {
       document.getElementById('dynamic-title').innerText = data.word + ' - ' + $APP_NAME;
       var desc = 'Meaning and explanation for ' + data.word + ' from the ' + $APP_NAME + '.';
       var metaDesc = document.getElementById('dynamic-description');
       if (metaDesc) metaDesc.setAttribute('content', desc);
     }
-  });  
+    $location.hash('top'); // Sets the hash to #top
+    $anchorScroll();       // Scrolls to the element with id="top" or to the top of the page
+  });
   $scope.goBack = function() {
         $window.history.back();
   };

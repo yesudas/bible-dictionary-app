@@ -26,10 +26,23 @@
 	.original-in-english{
 		font-size: 16px;
 	}
+	.hebrewOrGreek{
+		font-size: 125%;
+    	font-weight: bold;
+    	color: deeppink;
+	}
 	</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZYHRZG9B8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-8ZYHRZG9B8');
+</script>
 </head>
-<body class="quizzler">
+<body id="top" class="quizzler">
 				<!-- second menu bar -->
 				<nav class="navbar navbar-default navbar-static">
 					<div class="navbar-header">
@@ -46,12 +59,13 @@
 					<div class="collapse navbar-collapse" id="b-menu-2">
 						<ul class="nav navbar-nav">
 							<li class="active"><a ui-sref="index"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-							<li><a href="https://wordofgod.in/bibledictionary/" target="_blank"><span class="glyphicon glyphicon-list-alt"> </span> Other Dictionaries</a> </li>
-							<li><a href="https://wordofgod.in/bibles/" target="_blank"><span class="glyphicon glyphicon-book"></span> Online Bibles</a></li>
+							<!-- <li><a href="https://wordofgod.in/bibledictionary/" target="_blank"><span class="glyphicon glyphicon-list-alt"> </span> Other Dictionaries</a> </li> -->
+							<!-- <li><a href="https://wordofgod.in/bibles/" target="_blank"><span class="glyphicon glyphicon-book"></span> Online Bibles</a></li> -->
 							<li><a href="https://wordofgod.in/bible-wallpapers/" target="_blank"><span class="glyphicon glyphicon-picture"></span> Bible Wallpapers</a></li>
+							<li><a href="https://wordofgod.in/" target="_blank"><span class="glyphicon glyphicon-book"></span> Free Christian Resources</a></li>
 							<li><a ui-sref="aboutUs"><span class="glyphicon glyphicon-certificate"></span> About Us</a></li>
 							<li><a ui-sref="contactUs"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
-							<li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li>
+							<!-- <li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li> -->
 						</ul>
 					</div><!-- /.nav-collapse-->
 				</nav>
@@ -72,7 +86,7 @@
 <footer>
 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 		<p class="navbar-text">&nbsp; &nbsp; No Copyright, Freely Copy and Distribute (as per Matthew 10:8), <a target="_blank" href="https://www.wordofgod.in/">www.WordOfGod.in</a> 
-		| <a href="sitemap.php" target="_blank">Sitemap</a> 
+		<!--| <a href="sitemap.php" target="_blank">Sitemap</a> -->
 		| Visitors: <?= $visitors2 ?></p>
 	</nav>
 </footer>
