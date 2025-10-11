@@ -1,0 +1,22 @@
+{
+  "name": "ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி",
+  "short_name": "Strongs Greek",
+  "description": "வேதாகமத்தில் உள்ள கிரேக்க வார்த்தைகளுக்கு பண்டிதர் ஜேம்ஸ் ஸ்ட்ராங்க்ஸ் எழுதின அகராதி, ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி - Strong's Greek Dictionary in Tamil, from www.wordofgod.in",
+  "start_url": "/bibledictionary/ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/",
+  "scope": "/bibledictionary/ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "/bibledictionary/ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

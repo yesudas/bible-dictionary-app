@@ -9,12 +9,14 @@
 
 </div>
 
-<p>&nbsp;</p>
-<button class="btn btn-primary" ng-click="goBack()">Back</button>
-<button id="copyBtn" class="btn btn-primary" onclick="copyQuizSection()" title="Copy content">Copy Text to Clipboard</button>
-<p>&nbsp;</p>
+<div ng-show="Word">
+    <p>&nbsp;</p>
+    <button class="btn btn-primary" ng-click="goBack()">Back</button>
+    <button id="copyBtn" class="btn btn-primary" onclick="copyQuizSection()" title="Copy content">Copy Text to Clipboard</button>
+    <p>&nbsp;</p>
+</div>
 
-<div class="dictionary-details">
+<div class="dictionary-details" ng-show="Word">
   <p>
     <strong>Title:&nbsp;</strong>
     <span>ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி / Strong's Greek Bible Dictionary in Tamil</span>

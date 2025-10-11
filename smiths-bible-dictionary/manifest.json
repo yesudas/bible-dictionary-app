@@ -1,0 +1,22 @@
+{
+  "name": "Smiths Bible Dictionary",
+  "short_name": "Smiths Dictionary",
+  "description": "Smiths Bible Dictionary - Smiths Bible Dictionary, from www.wordofgod.in",
+  "start_url": "/bibledictionary/smiths-bible-dictionary/",
+  "scope": "/bibledictionary/smiths-bible-dictionary/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "/bibledictionary/smiths-bible-dictionary/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/smiths-bible-dictionary/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

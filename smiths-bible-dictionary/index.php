@@ -1,5 +1,6 @@
 <?php
     include 'counter.php';
+     $version = '2025.03';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,13 +11,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title id="dynamic-title">Bible Dictionary by William Smith</title>
 <meta id="dynamic-description" name="description" content="Bible Dictionary by William Smith" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/textAngular.css"/>
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/app.css"/>
-	<style type="text/css">
-	/*body { background: #40bce7 !important; }*/
-	</style>
+    
+    <link rel="manifest" href="/bibledictionary/smiths-bible-dictionary/manifest.json">
+    <meta name="theme-color" content="#2196f3">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/textAngular.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css?v=<?php echo $version; ?>"/>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZYHRZG9B8"></script>
 <script>
@@ -44,12 +47,14 @@
 					<div class="collapse navbar-collapse" id="b-menu-2">
 						<ul class="nav navbar-nav">
 							<li class="active"><a ui-sref="index"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+							<li><a id="installAppBtn" ui-sref="index"> 📲 Install App</a></li>
 							<li><a href="https://wordofgod.in/bibledictionary/" target="_blank"><span class="glyphicon glyphicon-list-alt"> </span> Other Dictionaries</a> </li>
-							<li><a href="https://wordofgod.in/bibles/" target="_blank"><span class="glyphicon glyphicon-book"></span> Online Bibles</a></li>
+							<!-- <li><a href="https://wordofgod.in/bibles/" target="_blank"><span class="glyphicon glyphicon-book"></span> Online Bibles</a></li> -->
 							<li><a href="https://wordofgod.in/bible-wallpapers/" target="_blank"><span class="glyphicon glyphicon-picture"></span> Bible Wallpapers</a></li>
-							<li><a ui-sref="aboutUs"><span class="glyphicon glyphicon-certificate"></span> About Us</a></li>
-							<li><a ui-sref="contactUs"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
-						<!--	<li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li> -->
+							<li><a href="https://wordofgod.in/bible-app-modules/" target="_blank"><span class="glyphicon glyphicon-gift"></span> Bible App Modules</a></li>
+							<li><a href="https://wordofgod.in/" target="_blank"><span class="glyphicon glyphicon-book"></span> Free Christian Resources</a></li>
+							<li><a ui-sref="aboutUs"><span class="glyphicon glyphicon-certificate"></span> About</a></li>
+							<!-- <li><a href="sitemap.xml" target="_blank"><span class="glyphicon glyphicon-link"> </span> Sitemap</a> </li> -->
 						</ul>
 					</div><!-- /.nav-collapse-->
 				</nav>
@@ -67,6 +72,13 @@
 	    </div><!--/.container-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<div class="zoom-controls">
+    <button class="zoom-btn" onclick="zoomIn()">+</button>
+    <button class="zoom-btn" onclick="zoomOut()">−</button>
+    <button class="zoom-btn" onclick="resetZoom()">⟳</button>
+</div>
+  
 <footer>
 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 		<p class="navbar-text">&nbsp; &nbsp; No Copyright, Freely Copy and Distribute (as per Matthew 10:8), <a target="_blank" href="https://www.wordofgod.in/">www.WordOfGod.in</a> 
@@ -75,11 +87,11 @@
 	</nav>
 </footer>
 
-	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/config.js?v=<?php echo $version; ?>"></script>
 	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
-	<script type="text/javascript" src="js/services.js"></script>
+	<script type="text/javascript" src="js/app.js?v=<?php echo $version; ?>"></script>
+	<script type="text/javascript" src="js/controllers.js?v=<?php echo $version; ?>"></script>
+	<script type="text/javascript" src="js/services.js?v=<?php echo $version; ?>"></script>
 	<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="js/angular-resource.min.js"></script>
 	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
@@ -88,10 +100,11 @@
 	<script type="text/javascript" src="js/textAngular.min.js"></script>
 	<script type="text/javascript" src="js/spin.min.js"></script>
 	<script type="text/javascript" src="js/angular-spinner.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/index.js?v=<?php echo $version; ?>"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/underscore-min.js"></script>
 	<script type="text/javascript" src="js/supplant.js"></script>
-	<script type="text/javascript" src="js/copy-text.js"></script>
+	<script type="text/javascript" src="js/copy-text.js?v=<?php echo $version; ?>"></script>
+	<script type="text/javascript" src="js/script.js?v=<?php echo $version; ?>"></script>
 </body>
 </html>

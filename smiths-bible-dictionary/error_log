@@ -1,0 +1,17 @@
+[13-Aug-2025 04:06:49 America/Chicago] PHP Warning:  SQLite3::exec(): database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 29
+[13-Aug-2025 04:06:49 America/Chicago] PHP Warning:  SQLite3::querySingle(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 34
+[13-Aug-2025 04:06:49 America/Chicago] PHP Warning:  SQLite3::prepare(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 43
+[13-Aug-2025 04:06:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on bool in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php:44
+Stack trace:
+#0 /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/index.php(2): include()
+#1 {main}
+  thrown in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 44
+[25-Aug-2025 22:03:41 America/Chicago] PHP Warning:  SQLite3Stmt::execute(): Unable to execute statement: database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 45
+[04-Sep-2025 08:38:02 America/Chicago] PHP Warning:  SQLite3::exec(): database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 29
+[04-Sep-2025 08:38:02 America/Chicago] PHP Warning:  SQLite3::querySingle(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 34
+[04-Sep-2025 08:38:02 America/Chicago] PHP Warning:  SQLite3::prepare(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 43
+[04-Sep-2025 08:38:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on bool in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php:44
+Stack trace:
+#0 /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/index.php(2): include()
+#1 {main}
+  thrown in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/smiths-bible-dictionary/counter.php on line 44

@@ -1,0 +1,22 @@
+{
+  "name": "Eastons Bible Dictionary",
+  "short_name": "Eastons Dictionary",
+  "description": "Eastons Bible Dictionary - Eastons Bible Dictionary, from www.wordofgod.in",
+  "start_url": "/bibledictionary/eastons-bible-dictionary/",
+  "scope": "/bibledictionary/eastons-bible-dictionary/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "/bibledictionary/eastons-bible-dictionary/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/eastons-bible-dictionary/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

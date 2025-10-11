@@ -57,7 +57,7 @@ angular.module('bookApp.controllers', []).controller('BookController', function(
       var metaDesc = document.getElementById('dynamic-description');
       if (metaDesc) metaDesc.setAttribute('content', desc);
     }
-    $location.hash('top'); // Sets the hash to #top
+    //$location.hash('top'); // Sets the hash to #top
     $anchorScroll();       // Scrolls to the element with id="top" or to the top of the page
   });
   $scope.goBack = function() {

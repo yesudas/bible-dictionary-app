@@ -1,0 +1,22 @@
+{
+  "name": "சத்திய வேதாகமப் பெயர் அகராதி",
+  "short_name": "Names Dictionary",
+  "description": "சத்திய வேதாகமப் பெயர் அகராதி - Bible Names Dictionary in Tamil, from www.wordofgod.in",
+  "start_url": "/bibledictionary/சத்திய-வேதாகமப்-பெயர்-அகராதி/",
+  "scope": "/bibledictionary/சத்திய-வேதாகமப்-பெயர்-அகராதி/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "/bibledictionary/சத்திய-வேதாகமப்-பெயர்-அகராதி/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/சத்திய-வேதாகமப்-பெயர்-அகராதி/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
