@@ -1,1 +1,10 @@
+/bin/
 sync.ffs_db
+.sync.ffs_db
+.DS_Store
+counter.txt
+**/.DS_Store
+error_log
+**/error_log
+*.log
+**/.sync.ffs_db
