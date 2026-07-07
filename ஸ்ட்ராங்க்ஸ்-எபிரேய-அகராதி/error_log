@@ -1,8 +1,0 @@
-[10-Sep-2025 04:56:42 America/Chicago] PHP Warning:  SQLite3::exec(): database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/counter.php on line 29
-[10-Sep-2025 04:56:42 America/Chicago] PHP Warning:  SQLite3::querySingle(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/counter.php on line 34
-[10-Sep-2025 04:56:42 America/Chicago] PHP Warning:  SQLite3::prepare(): Unable to prepare statement: 5, database is locked in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/counter.php on line 43
-[10-Sep-2025 04:56:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on bool in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/counter.php:44
-Stack trace:
-#0 /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/index.php(2): include()
-#1 {main}
-  thrown in /home2/wordosn0/public_html/www.wordofgod.in/bibledictionary/ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/counter.php on line 44

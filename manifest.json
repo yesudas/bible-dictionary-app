@@ -5,16 +5,16 @@
   "start_url": "/bibledictionary/",
   "scope": "/bibledictionary/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2196f3",
+  "background_color": "#fbfffc",
+  "theme_color": "#173f36",
   "icons": [
     {
-      "src": "/bibledictionary/images/icon-192.png",
+      "src": "/bibledictionary/assets/images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/bibledictionary/images/icon-512.png",
+      "src": "/bibledictionary/assets/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

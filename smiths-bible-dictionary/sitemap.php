@@ -19,20 +19,20 @@ if (!$data || !isset($data['words'])) {
 $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
 $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
 
-// Base URL
-$baseUrl = 'http://wordofgod.in/bibledictionary/smiths-bible-dictionary/#/';
+// Base URL -- derives the dictionary's folder name automatically so this
+// script needs no per-dictionary edits.
+$baseUrl = 'https://wordofgod.in/bibledictionary/' . rawurlencode(basename(__DIR__)) . '/index.php?word=';
 
 // Today's date in YYYY-MM-DD format
 $today = date('Y-m-d');
 
 // Add each word as a URL
 foreach ($data['words'] as $word) {
-    // URL encode the word for the link
-    $wordUrl = rawurlencode($word['word']);
-    $loc = $baseUrl . $wordUrl . '/' . $word['id'];
+    $loc = $baseUrl . rawurlencode($word['slug']);
     $xml .= "  <url>\n";
     $xml .= "    <loc>{$loc}</loc>\n";
     $xml .= "    <lastmod>{$today}</lastmod>\n";
+    $xml .= "    <changefreq>yearly</changefreq>\n";
     $xml .= "  </url>\n";
 }
 
