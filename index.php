@@ -49,11 +49,38 @@ $version = '2026.03';
         <a class="card" href="ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/">
             <h2>ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி</h2>
         </a>
+        <a class="card" href="bdag3-greek-dictionary/">
+            <h2>BDAG3 Greek Dictionary</h2>
+        </a>
+        <a class="card" href="bdb-t-bible-dictionary/">
+            <h2>BDB-T Bible Dictionary</h2>
+        </a>
+        <a class="card" href="danker-greek-dictionary/">
+            <h2>Danker Greek Dictionary</h2>
+        </a>
         <a class="card" href="eastons-bible-dictionary/">
             <h2>Easton's Bible Dictionary</h2>
         </a>
+        <a class="card" href="gesenius-hebrew-dictionary/">
+            <h2>Gesenius Hebrew Dictionary</h2>
+        </a>
+        <a class="card" href="gr-en-ls-greek-dictionary/">
+            <h2>Gr-En-LS Greek Dictionary</h2>
+        </a>
+        <a class="card" href="he-en-b-hebrew-dictionary/">
+            <h2>He-En-B Hebrew Dictionary</h2>
+        </a>
+        <a class="card" href="lxx-green-dictionary/">
+            <h2>LXX Green Dictionary</h2>
+        </a>
+        <a class="card" href="mlsj-greek-dictionary/">
+            <h2>MLSJ Greek Dictionary</h2>
+        </a>
         <a class="card" href="smiths-bible-dictionary/">
             <h2>Smith's Bible Dictionary</h2>
+        </a>
+        <a class="card" href="strongs-bible-dictionary/">
+            <h2>Strong's Bible Dictionary</h2>
         </a>
         <a class="card" href="tamil-bible-dictionary/">
             <h2>Tamil Bible Dictionary by Truth</h2>

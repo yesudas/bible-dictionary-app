@@ -1,0 +1,22 @@
+{
+  "name": "BDAG3 Greek Dictionary",
+  "short_name": "BDAG3 Greek",
+  "description": "BDAG3 Greek Dictionary - from www.wordofgod.in",
+  "start_url": "/bibledictionary/bdag3-greek-dictionary/",
+  "scope": "/bibledictionary/bdag3-greek-dictionary/",
+  "display": "standalone",
+  "background_color": "#fbfffc",
+  "theme_color": "#173f36",
+  "icons": [
+    {
+      "src": "/bibledictionary/bdag3-greek-dictionary/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/bdag3-greek-dictionary/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

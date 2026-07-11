@@ -109,7 +109,10 @@
       "Bash(rm -f /tmp/php-verify-copy.log)",
       "Bash(node --check assets/js/app.js)",
       "Bash(grep -v \"^data$\\\\|^v1$\\\\|.DS_Store\")",
-      "Bash(grep -v \"^v1$\\\\|.DS_Store\\\\|.git\\\\|.claude\")"
+      "Bash(grep -v \"^v1$\\\\|.DS_Store\\\\|.git\\\\|.claude\")",
+      "Bash(/bin/bash --version)",
+      "Bash(bash /private/tmp/claude-501/-Users-yesudas-WOG-github-projects-bible-dictionary-app/3cfa5fed-b1b4-4bef-9752-e5e4064739f9/scratchpad/gen_manifests.sh)",
+      "Bash(php -l i.php)"
     ],
     "additionalDirectories": [
       "/Users/yesudas/WOG/github-projects/private-apps/python/bible-dictionary",

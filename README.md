@@ -5,7 +5,7 @@ Simple &amp; elegant web application for bible dictionaries
 https://wordofgod.in/bibledictionary
 
 # Features
-1. Mobile-friendly PHP web apps — a parent hub linking to 6 dictionaries, each a self-contained app
+1. Mobile-friendly PHP web apps — a parent hub linking to 15 dictionaries, each a self-contained app
 2. Installable as a PWA (manifest + service worker) on both the parent and every dictionary
 3. Instant filter-as-you-type search (client-side, no page reload) with server-side pagination fallback
 4. Every word has its own bookmarkable, SEO-friendly URL (`index.php?word=...`)
@@ -18,12 +18,25 @@ https://wordofgod.in/bibledictionary
 # Dictionaries
 | Folder | Language |
 |---|---|
+| `bdag3-greek-dictionary` | English (Greek lexicon — BDAG3) |
+| `bdb-t-bible-dictionary` | English (Greek lexicon — BDB-T) |
+| `danker-greek-dictionary` | English (Greek lexicon — Danker) |
 | `eastons-bible-dictionary` | English |
+| `gesenius-hebrew-dictionary` | English (Hebrew lexicon — Gesenius) |
+| `gr-en-ls-greek-dictionary` | English (Greek lexicon — Liddell-Scott) |
+| `he-en-b-hebrew-dictionary` | Hebrew + English (bilingual) |
+| `lxx-green-dictionary` | English (Greek lexicon — LXX/Green's) |
+| `mlsj-greek-dictionary` | English (Greek lexicon — MLSJ) |
 | `smiths-bible-dictionary` | English |
+| `strongs-bible-dictionary` | English (Hebrew & Greek — Strong's) |
 | `tamil-bible-dictionary` | Tamil |
 | `சத்திய-வேதாகமப்-பெயர்-அகராதி` | Tamil (Bible names) |
 | `ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி` | Tamil + Hebrew (Strong's) |
 | `ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி` | Tamil + Greek (Strong's) |
+
+> `greek-nt-dictionary` was also added but is missing from disk as of this
+> writing (likely removed by a sync tool) — add it back to this table once
+> it's confirmed present again.
 
 Each dictionary folder is an independent PHP app with the same structure,
 built from a shared template (see **Child app anatomy** below) — copy

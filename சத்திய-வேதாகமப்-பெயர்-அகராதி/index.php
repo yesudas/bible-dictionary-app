@@ -22,7 +22,7 @@ if ($word !== '') {
  * ==================================================================== */
 function renderWordList($allWords, $dictionaryTitle, $dictionaryAuthor, $totalWords, $visitors2, $version) {
     $query = trim($_GET['q'] ?? '');
-    $perPage = 50;
+    $perPage = 52;
     $page = max(1, intval($_GET['page'] ?? 1));
 
     if ($query !== '') {
