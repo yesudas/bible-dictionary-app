@@ -1,6 +1,7 @@
 {
   "word": "fig",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

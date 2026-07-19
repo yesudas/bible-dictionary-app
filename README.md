@@ -5,7 +5,7 @@ Simple &amp; elegant web application for bible dictionaries
 https://wordofgod.in/bibledictionary
 
 # Features
-1. Mobile-friendly PHP web apps — a parent hub linking to 15 dictionaries, each a self-contained app
+1. Mobile-friendly PHP web apps — a parent hub linking to 18 dictionaries, each a self-contained app
 2. Installable as a PWA (manifest + service worker) on both the parent and every dictionary
 3. Instant filter-as-you-type search (client-side, no page reload) with server-side pagination fallback
 4. Every word has its own bookmarkable, SEO-friendly URL (`index.php?word=...`)
@@ -27,10 +27,13 @@ https://wordofgod.in/bibledictionary
 | `he-en-b-hebrew-dictionary` | Hebrew + English (bilingual) |
 | `lxx-green-dictionary` | English (Greek lexicon — LXX/Green's) |
 | `mlsj-greek-dictionary` | English (Greek lexicon — MLSJ) |
+| `naves-bible-dictionary` | English (Nave's Topical Bible Dictionary) |
 | `smiths-bible-dictionary` | English |
 | `strongs-bible-dictionary` | English (Hebrew & Greek — Strong's) |
-| `tamil-bible-dictionary` | Tamil |
+| `tamil-bible-dictionary-by-truth` | Tamil |
+| `thompson-chain-reference` | English (Thompson Chain Reference) |
 | `சத்திய-வேதாகமப்-பெயர்-அகராதி` | Tamil (Bible names) |
+| `பரிபூரண-பெயர்ப்-பொக்கிஷம்` | Tamil (Bible names — எம். ஜோசப் மோசஸ்) |
 | `ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி` | Tamil + Hebrew (Strong's) |
 | `ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி` | Tamil + Greek (Strong's) |
 
@@ -55,8 +58,11 @@ add another dictionary.
   script, and PWA icons.
 - `manifest.json` + `sw.js` — PWA support.
 - `counter.php` — bot-filtered visitor counter; also consolidates each
-  dictionary's own `counter.txt` into a combined weekly total (see the
-  `$consolidationDay` / `$additionalFolders` config at the top of the file).
+  dictionary's own `counter.txt` into a combined weekly total (see
+  `$consolidationIntervalSeconds` at the top of the file). The dictionaries
+  it consolidates (`$additionalFolders`) are auto-discovered — any immediate
+  subfolder with its own `counter.php` — so a newly added dictionary needs
+  no edits here.
 - `robots.txt` — crawler rules; not touched by any of the scripts here.
 - `v1/` — archived copy of the old static homepage, kept for reference
   only; not served.
@@ -75,7 +81,7 @@ rather than the dictionary's exact base word (`ஆரோன்`).
   {
     "word": "அகபு",
     "supportedDictionaries": [
-      "tamil-bible-dictionary",
+      "tamil-bible-dictionary-by-truth",
       "சத்திய-வேதாகமப்-பெயர்-அகராதி"
     ]
   }
@@ -96,10 +102,12 @@ php i.php
 ```
 
 Scans the `data/` folder of every dictionary listed in its `$dictionaries`
-array (edit that array to add/remove a dictionary), skipping
+array (unlike `sitemap.php`/`counter.php`, this list is manually
+maintained — edit it to add/remove a dictionary), skipping
 `Dictionary.json`, and writes `index/words/{word}.json` for every word file
 found (e.g. `data/அகசியா.json` → word `அகசியா`), listing which of those
-dictionaries contain it.
+dictionaries contain it. Can also be opened in a browser — it renders a
+styled HTML progress page instead of the plain/ANSI CLI output.
 
 ### `api.php` — `getDictionaries` endpoint
 
@@ -107,14 +115,14 @@ dictionaries contain it.
 GET /bibledictionary/api.php?action=getDictionaries&word=ஆரோனாலும்
 → {
     "dictionaries": [
-      {"slug": "ஆரோன்", "dictionary": "tamil-bible-dictionary"},
+      {"slug": "ஆரோன்", "dictionary": "tamil-bible-dictionary-by-truth"},
       {"slug": "ஆரோன்", "dictionary": "சத்திய-வேதாகமப்-பெயர்-அகராதி"}
     ]
   }
 ```
 
 Each entry's `slug` is the filename to fetch from *that entry's own*
-`dictionary`, e.g. `tamil-bible-dictionary/data/ஆரோன்.json`. Pairing them
+`dictionary`, e.g. `tamil-bible-dictionary-by-truth/data/ஆரோன்.json`. Pairing them
 per-entry (rather than one shared slug for the whole list) keeps this
 correct even in the rare case where a single inflected form resolves to
 more than one distinct dictionary word, each potentially slugged
@@ -148,7 +156,10 @@ Regenerates every dictionary's own `sitemap.xml` (each dictionary's
 `sitemap.php` runs as its own subprocess, so one dictionary's failure
 can't take down the others), then writes a `sitemap.xml` here as a
 `<sitemapindex>` pointing at all of them — this is the one URL to submit
-to search engines.
+to search engines. Dictionaries are auto-discovered (any immediate
+subfolder with its own `sitemap.php`), so a newly added dictionary needs
+no edits here. Can also be opened in a browser — it renders a styled HTML
+progress page instead of the plain/ANSI CLI output.
 
 ---
 

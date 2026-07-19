@@ -1,7 +1,6 @@
 {
-  "word": "homer",
+  "word": "Homer",
   "supportedDictionaries": [
-    "eastons-bible-dictionary",
-    "smiths-bible-dictionary"
+    "mlsj-greek-dictionary"
   ]
 }

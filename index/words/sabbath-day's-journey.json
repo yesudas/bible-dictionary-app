@@ -1,6 +1,8 @@
 {
   "word": "sabbath-day's-journey",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

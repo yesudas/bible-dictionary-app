@@ -2,6 +2,8 @@
   "word": "gehazi",
   "supportedDictionaries": [
     "eastons-bible-dictionary",
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

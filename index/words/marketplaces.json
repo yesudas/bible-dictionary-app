@@ -1,6 +1,7 @@
 {
   "word": "marketplaces",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

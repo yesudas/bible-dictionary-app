@@ -2,6 +2,7 @@
   "word": "beetle",
   "supportedDictionaries": [
     "eastons-bible-dictionary",
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "word": "armour",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

@@ -1,6 +1,8 @@
 {
   "word": "G1128",
   "supportedDictionaries": [
-    "ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி"
+    "ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி",
+    "bdb-t-bible-dictionary",
+    "strongs-bible-dictionary"
   ]
 }

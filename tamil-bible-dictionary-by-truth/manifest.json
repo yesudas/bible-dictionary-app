@@ -1,0 +1,22 @@
+{
+  "name": "Tamil Bible Dictionary by Truth",
+  "short_name": "Tamil Dictionary",
+  "description": "Tamil Bible Dictionary by Truth, from www.wordofgod.in",
+  "start_url": "/bibledictionary/tamil-bible-dictionary-by-truth/",
+  "scope": "/bibledictionary/tamil-bible-dictionary-by-truth/",
+  "display": "standalone",
+  "background_color": "#fbfffc",
+  "theme_color": "#173f36",
+  "icons": [
+    {
+      "src": "/bibledictionary/tamil-bible-dictionary-by-truth/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bibledictionary/tamil-bible-dictionary-by-truth/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

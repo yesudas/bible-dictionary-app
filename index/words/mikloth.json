@@ -2,6 +2,7 @@
   "word": "mikloth",
   "supportedDictionaries": [
     "eastons-bible-dictionary",
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

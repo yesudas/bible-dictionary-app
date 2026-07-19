@@ -1,6 +1,7 @@
 {
   "word": "en-rogel",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

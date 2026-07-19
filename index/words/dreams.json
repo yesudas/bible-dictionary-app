@@ -1,6 +1,7 @@
 {
   "word": "dreams",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

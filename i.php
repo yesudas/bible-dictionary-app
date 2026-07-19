@@ -20,10 +20,22 @@
 $dictionaries = [
     "eastons-bible-dictionary",
     "smiths-bible-dictionary",
-    "tamil-bible-dictionary",
     "சத்திய-வேதாகமப்-பெயர்-அகராதி",
     "ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி",
     "ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி",
+    "bdag3-greek-dictionary",
+    "bdb-t-bible-dictionary",
+    "danker-greek-dictionary",
+    "gesenius-hebrew-dictionary",
+    "gr-en-ls-greek-dictionary",
+    "he-en-b-hebrew-dictionary",
+    "lxx-green-dictionary",
+    "mlsj-greek-dictionary",
+    "tamil-bible-dictionary-by-truth",
+    "strongs-bible-dictionary",
+    "பரிபூரண-பெயர்ப்-பொக்கிஷம்",
+    "naves-bible-dictionary",
+    "thompson-chain-reference",
 ];
 
 $baseDir = __DIR__;

@@ -1,6 +1,7 @@
 {
   "word": "maher-shalal-hash-baz",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

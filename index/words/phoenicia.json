@@ -1,6 +1,7 @@
 {
   "word": "phoenicia",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

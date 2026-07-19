@@ -38,10 +38,14 @@ $version = '2026.03';
     </div>
 </header>
 
+
 <main>
     <div class="container">
         <a class="card" href="சத்திய-வேதாகமப்-பெயர்-அகராதி/">
             <h2>சத்திய வேதாகமப் பெயர் அகராதி</h2>
+        </a>
+        <a class="card" href="பரிபூரண-பெயர்ப்-பொக்கிஷம்/">
+            <h2>பரிபூரண பரிசுத்த வேதாகமப் பெயர்ப் பொக்கிஷம்</h2>
         </a>
         <a class="card" href="ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/">
             <h2>ஸ்ட்ராங்க்ஸ் எபிரேய அகராதி</h2>
@@ -76,14 +80,20 @@ $version = '2026.03';
         <a class="card" href="mlsj-greek-dictionary/">
             <h2>MLSJ Greek Dictionary</h2>
         </a>
+        <a class="card" href="naves-bible-dictionary/">
+            <h2>Nave's Bible Dictionary</h2>
+        </a>
         <a class="card" href="smiths-bible-dictionary/">
             <h2>Smith's Bible Dictionary</h2>
         </a>
         <a class="card" href="strongs-bible-dictionary/">
             <h2>Strong's Bible Dictionary</h2>
         </a>
-        <a class="card" href="tamil-bible-dictionary/">
+        <a class="card" href="tamil-bible-dictionary-by-truth/">
             <h2>Tamil Bible Dictionary by Truth</h2>
+        </a>
+        <a class="card" href="thompson-chain-reference/">
+            <h2>Thompson Chain Reference</h2>
         </a>
     </div>
 </main>

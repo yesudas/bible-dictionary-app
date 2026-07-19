@@ -1,6 +1,8 @@
 {
   "word": "offerings",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

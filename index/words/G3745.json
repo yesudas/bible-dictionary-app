@@ -1,6 +1,9 @@
 {
   "word": "G3745",
   "supportedDictionaries": [
-    "ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி"
+    "ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி",
+    "bdb-t-bible-dictionary",
+    "lxx-green-dictionary",
+    "strongs-bible-dictionary"
   ]
 }

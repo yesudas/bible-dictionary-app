@@ -1,6 +1,7 @@
 {
   "word": "zer",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

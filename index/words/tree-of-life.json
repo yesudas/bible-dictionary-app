@@ -1,6 +1,7 @@
 {
   "word": "tree-of-life",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

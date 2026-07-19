@@ -1,7 +1,21 @@
 <?php
 // counter.php
 
-$additionalFolders = ['eastons-bible-dictionary', 'smiths-bible-dictionary', 'tamil-bible-dictionary', 'சத்திய-வேதாகமப்-பெயர்-அகராதி', 'ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி', 'ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி'];
+// Auto-discovered: any immediate subfolder of this directory with its own
+// counter.php is treated as a dictionary, so a newly added dictionary is
+// consolidated here without editing this file (same approach as
+// sitemap.php's dictionary discovery).
+$additionalFolders = [];
+foreach (scandir(__DIR__) as $entry) {
+    if ($entry === '.' || $entry === '..') {
+        continue;
+    }
+    if (is_dir(__DIR__ . '/' . $entry) && file_exists(__DIR__ . '/' . $entry . '/counter.php')) {
+        $additionalFolders[] = $entry;
+    }
+}
+sort($additionalFolders, SORT_STRING);
+
 $consolidationIntervalSeconds = 7 * 86400; // consolidate roughly once a week
 
 // Helper function to read/write last consolidated snapshots

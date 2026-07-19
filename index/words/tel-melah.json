@@ -1,6 +1,7 @@
 {
   "word": "tel-melah",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "word": "towers",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

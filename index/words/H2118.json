@@ -1,6 +1,8 @@
 {
   "word": "H2118",
   "supportedDictionaries": [
-    "ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி"
+    "ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி",
+    "bdb-t-bible-dictionary",
+    "strongs-bible-dictionary"
   ]
 }

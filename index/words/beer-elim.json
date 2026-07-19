@@ -1,6 +1,7 @@
 {
   "word": "beer-elim",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

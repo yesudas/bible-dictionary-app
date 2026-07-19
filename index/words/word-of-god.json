@@ -1,6 +1,7 @@
 {
   "word": "word-of-god",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }

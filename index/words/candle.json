@@ -1,6 +1,8 @@
 {
   "word": "candle",
   "supportedDictionaries": [
-    "eastons-bible-dictionary"
+    "eastons-bible-dictionary",
+    "naves-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

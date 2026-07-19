@@ -1,6 +1,8 @@
 {
   "word": "girgashites",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary",
+    "thompson-chain-reference"
   ]
 }

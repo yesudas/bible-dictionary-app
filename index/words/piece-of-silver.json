@@ -1,6 +1,7 @@
 {
   "word": "piece-of-silver",
   "supportedDictionaries": [
-    "smiths-bible-dictionary"
+    "smiths-bible-dictionary",
+    "naves-bible-dictionary"
   ]
 }
