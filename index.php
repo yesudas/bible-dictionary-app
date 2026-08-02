@@ -1,6 +1,6 @@
 <?php
 include 'counter.php';
-$version = '2026.03';
+include 'version.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,10 @@ $version = '2026.03';
             <h1>Bible Dictionaries</h1>
             <p class="header-kicker">WordOfGod.in</p>
         </div>
-        <button id="installAppBtn">📲 Install App</button>
+        <div class="header-actions">
+            <a class="about-link" href="about.php">About Us</a>
+            <button id="installAppBtn">📲 Install App</button>
+        </div>
     </div>
 </header>
 

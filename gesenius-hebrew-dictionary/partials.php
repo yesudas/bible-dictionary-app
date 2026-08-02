@@ -136,7 +136,7 @@ function renderHeader($dictionaryTitle, $pageTitle, $metaDescription, $version) 
         <?php foreach (siteResourceLinks() as $link): ?>
             <?php echo renderLink($link); ?>
         <?php endforeach; ?>
-        <a href="about.php">About Us</a>
+        <a href="../about.php">About Us</a>
     </nav>
 </header>
     <?php

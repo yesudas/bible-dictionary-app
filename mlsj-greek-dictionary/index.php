@@ -1,7 +1,7 @@
 <?php
 require 'partials.php';
 include 'counter.php';
-$version = '2026.03';
+include '../version.php';
 
 $dataDir = __DIR__ . '/data';
 $dictionary = json_decode(file_get_contents($dataDir . '/Dictionary.json'), true);
