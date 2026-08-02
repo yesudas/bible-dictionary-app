@@ -12,7 +12,7 @@ $allWords = $dictionary['words'] ?? [];
 $word = trim($_GET['word'] ?? '');
 
 if ($word !== '') {
-    renderWordDetail($word, $dataDir, $dictionaryTitle, $dictionaryAuthor, count($allWords), $visitors2, $version);
+    renderWordDetail($word, $dataDir, $dictionaryTitle, $dictionaryAuthor, $allWords, $visitors2, $version);
 } else {
     renderWordList($allWords, $dictionaryTitle, $dictionaryAuthor, count($allWords), $visitors2, $version);
 }
@@ -133,7 +133,8 @@ function renderPagination($page, $totalPages, $query) {
 /* ========================================================================
  * Word detail page
  * ==================================================================== */
-function renderWordDetail($slug, $dataDir, $dictionaryTitle, $dictionaryAuthor, $totalWords, $visitors2, $version) {
+function renderWordDetail($slug, $dataDir, $dictionaryTitle, $dictionaryAuthor, $allWords, $visitors2, $version) {
+    $totalWords = count($allWords);
     $safeSlug = basename($slug);
     $wordFile = $dataDir . '/' . $safeSlug . '.json';
 
@@ -144,6 +145,16 @@ function renderWordDetail($slug, $dataDir, $dictionaryTitle, $dictionaryAuthor, 
         renderFooter($dictionaryTitle, $dictionaryAuthor, $totalWords, $visitors2, $version);
         return;
     }
+
+    $wordIndex = null;
+    foreach ($allWords as $i => $item) {
+        if (($item['slug'] ?? '') === $safeSlug) {
+            $wordIndex = $i;
+            break;
+        }
+    }
+    $prevItem = ($wordIndex !== null && $wordIndex > 0) ? $allWords[$wordIndex - 1] : null;
+    $nextItem = ($wordIndex !== null && $wordIndex < $totalWords - 1) ? $allWords[$wordIndex + 1] : null;
 
     $data = json_decode(file_get_contents($wordFile), true);
     $displayWord = capitalizeFirst(displayText($data));
@@ -177,8 +188,32 @@ function renderWordDetail($slug, $dataDir, $dictionaryTitle, $dictionaryAuthor, 
             <?php endforeach; ?>
         </div>
     </div>
+
+    <?php renderWordNav($prevItem, $nextItem, $wordIndex, $totalWords); ?>
 </main>
 
     <?php
     renderFooter($dictionaryTitle, $dictionaryAuthor, $totalWords, $visitors2, $version);
+}
+
+function renderWordNav($prevItem, $nextItem, $wordIndex, $totalWords) {
+    ?>
+    <div class="word-nav">
+        <?php if ($prevItem): ?>
+            <a class="word-nav-prev" href="index.php?word=<?php echo urlencode($prevItem['slug']); ?>">&laquo; Prev</a>
+        <?php else: ?>
+            <span class="word-nav-prev disabled">&laquo; Prev</span>
+        <?php endif; ?>
+
+        <?php if ($wordIndex !== null): ?>
+            <span class="word-nav-count"><?php echo $wordIndex + 1; ?> / <?php echo $totalWords; ?></span>
+        <?php endif; ?>
+
+        <?php if ($nextItem): ?>
+            <a class="word-nav-next" href="index.php?word=<?php echo urlencode($nextItem['slug']); ?>">Next &raquo;</a>
+        <?php else: ?>
+            <span class="word-nav-next disabled">Next &raquo;</span>
+        <?php endif; ?>
+    </div>
+    <?php
 }

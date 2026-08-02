@@ -388,6 +388,62 @@ main {
     font-weight: 700;
 }
 
+/* ---------- Word detail prev/next nav ---------- */
+.word-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 22px;
+    font-family: Arial, sans-serif;
+}
+
+.word-nav-prev,
+.word-nav-next {
+    display: inline-flex;
+    min-width: 90px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    color: var(--ink);
+    background: var(--surface-strong);
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.word-nav-prev:hover,
+.word-nav-next:hover {
+    border-color: rgba(154, 63, 63, 0.38);
+    background: var(--accent-soft);
+}
+
+.word-nav-prev.disabled,
+.word-nav-next.disabled {
+    color: #9ca9a3;
+    background: rgba(255, 254, 253, 0.56);
+    pointer-events: none;
+}
+
+.word-nav-count {
+    flex: 1;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .word-nav-prev,
+    .word-nav-next {
+        min-width: 70px;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
+
 .back-link {
     display: inline-flex;
     min-height: 38px;

@@ -8,3 +8,4 @@ error_log
 **/error_log
 *.log
 **/.sync.ffs_db
+counter-snapshots.json
