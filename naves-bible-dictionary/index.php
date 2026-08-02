@@ -1,5 +1,5 @@
 <?php
-require 'partials.php';
+require __DIR__ . '/../partials.php';
 include 'counter.php';
 include '../version.php';
 
