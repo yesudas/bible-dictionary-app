@@ -45,7 +45,7 @@ include 'version.php';
     <div class="home-hero-inner">
         <p class="home-brand">WordOfGod.in</p>
         <h1>Bible Dictionaries</h1>
-        <p class="home-lede">Free English and Tamil dictionaries for study, preaching, and everyday reading.</p>
+        <p class="home-lede">Free English, Tamil, Greek, Hebrew and other language dictionaries for study, preaching, and everyday reading.</p>
         <div class="home-cta">
             <a class="btn-primary" href="#dictionaries">Browse dictionaries</a>
             <a class="btn-ghost" href="about.php">About the ministry</a>
