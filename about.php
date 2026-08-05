@@ -83,7 +83,7 @@ include 'version.php';
         <section class="about-card">
             <h2>Our Books</h2>
             <p>We have published more than 190 books as of Sep 2025, all available in the public domain, free of cost.</p>
-            <p>Download them from <a href="https://www.wordofgod.in/" target="_blank" rel="noopener">www.WordOfGod.in</a> or our Telegram channels below.</p>
+            <p>Download them from <a href="https://www.wordofgod.in/" target="_blank" rel="noopener">www.WordOfGod.in</a> or our Telegram channels below or from <a href="https://archive.org/details/@yesudas" target="_blank" rel="noopener">archive.org</a>.</p>
             <p>Some are available as printed books on request, via <a href="https://notionpress.com/author/345982" target="_blank" rel="noopener">Bible Minutes at NotionPress</a>. All our books are royalty-free, priced at production cost &mdash; you can contact us for discount coupon codes.</p>
         </section>
 
