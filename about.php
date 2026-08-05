@@ -11,10 +11,13 @@ include 'version.php';
     <meta name="description" content="About the Word of God team behind these free Bible dictionaries, Bible apps, and Christian resources at WordOfGod.in.">
 
     <link rel="manifest" href="/bibledictionary/manifest.json?v=<?php echo $version; ?>">
-    <meta name="theme-color" content="#173f36">
+    <meta name="theme-color" content="#0c2e28">
     <link rel="icon" href="/bibledictionary/assets/images/icon-192.png">
     <link rel="apple-touch-icon" href="/bibledictionary/assets/images/icon-192.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Noto+Sans+Tamil:wght@400;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo $version; ?>">
 
     <!-- Google tag (gtag.js) -->

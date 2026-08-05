@@ -11,10 +11,13 @@ include 'version.php';
     <meta name="description" content="Free online Bible dictionaries in English and Tamil, from www.WordOfGod.in">
 
     <link rel="manifest" href="/bibledictionary/manifest.json?v=<?php echo $version; ?>">
-    <meta name="theme-color" content="#173f36">
+    <meta name="theme-color" content="#0c2e28">
     <link rel="icon" href="/bibledictionary/assets/images/icon-192.png">
     <link rel="apple-touch-icon" href="/bibledictionary/assets/images/icon-192.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Noto+Sans+Tamil:wght@400;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo $version; ?>">
 
     <!-- Google tag (gtag.js) -->
@@ -26,79 +29,75 @@ include 'version.php';
         gtag('config', 'G-8ZYHRZG9B8');
     </script>
 </head>
-<body>
+<body class="home">
 
-<header class="site-header">
-    <div class="header-inner">
-        <div>
-            <h1>Bible Dictionaries</h1>
-            <p class="header-kicker">WordOfGod.in</p>
-        </div>
+<header class="home-topbar">
+    <div class="home-topbar-inner">
+        <a class="topbar-brand" href="index.php">Bible Dictionaries</a>
         <div class="header-actions">
             <a class="about-link" href="about.php">About Us</a>
-            <button id="installAppBtn">📲 Install App</button>
+            <button id="installAppBtn" type="button">Install App</button>
         </div>
     </div>
 </header>
 
-
-<main>
-    <div class="container">
-        <a class="card" href="சத்திய-வேதாகமப்-பெயர்-அகராதி/">
-            <h2>சத்திய வேதாகமப் பெயர் அகராதி</h2>
-        </a>
-        <a class="card" href="பரிபூரண-பெயர்ப்-பொக்கிஷம்/">
-            <h2>பரிபூரண பரிசுத்த வேதாகமப் பெயர்ப் பொக்கிஷம்</h2>
-        </a>
-        <a class="card" href="ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/">
-            <h2>ஸ்ட்ராங்க்ஸ் எபிரேய அகராதி</h2>
-        </a>
-        <a class="card" href="ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/">
-            <h2>ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி</h2>
-        </a>
-        <a class="card" href="bdag3-greek-dictionary/">
-            <h2>BDAG3 Greek Dictionary</h2>
-        </a>
-        <a class="card" href="bdb-t-bible-dictionary/">
-            <h2>BDB-T Bible Dictionary</h2>
-        </a>
-        <a class="card" href="danker-greek-dictionary/">
-            <h2>Danker Greek Dictionary</h2>
-        </a>
-        <a class="card" href="eastons-bible-dictionary/">
-            <h2>Easton's Bible Dictionary</h2>
-        </a>
-        <a class="card" href="gesenius-hebrew-dictionary/">
-            <h2>Gesenius Hebrew Dictionary</h2>
-        </a>
-        <a class="card" href="gr-en-ls-greek-dictionary/">
-            <h2>Gr-En-LS Greek Dictionary</h2>
-        </a>
-        <a class="card" href="he-en-b-hebrew-dictionary/">
-            <h2>He-En-B Hebrew Dictionary</h2>
-        </a>
-        <a class="card" href="lxx-green-dictionary/">
-            <h2>LXX Green Dictionary</h2>
-        </a>
-        <a class="card" href="mlsj-greek-dictionary/">
-            <h2>MLSJ Greek Dictionary</h2>
-        </a>
-        <a class="card" href="naves-bible-dictionary/">
-            <h2>Nave's Bible Dictionary</h2>
-        </a>
-        <a class="card" href="smiths-bible-dictionary/">
-            <h2>Smith's Bible Dictionary</h2>
-        </a>
-        <a class="card" href="strongs-bible-dictionary/">
-            <h2>Strong's Bible Dictionary</h2>
-        </a>
-        <a class="card" href="tamil-bible-dictionary-by-truth/">
-            <h2>Tamil Bible Dictionary by Truth</h2>
-        </a>
-        <a class="card" href="thompson-chain-reference/">
-            <h2>Thompson Chain Reference</h2>
-        </a>
+<section class="home-hero" aria-label="Introduction">
+    <div class="home-hero-inner">
+        <p class="home-brand">WordOfGod.in</p>
+        <h1>Bible Dictionaries</h1>
+        <p class="home-lede">Free English and Tamil dictionaries for study, preaching, and everyday reading.</p>
+        <div class="home-cta">
+            <a class="btn-primary" href="#dictionaries">Browse dictionaries</a>
+            <a class="btn-ghost" href="about.php">About the ministry</a>
+        </div>
     </div>
+</section>
+
+<main id="dictionaries">
+    <section class="dict-section" aria-labelledby="tamil-heading">
+        <div class="dict-section-head">
+            <h2 id="tamil-heading">Tamil</h2>
+            <p>Names, Strong&rsquo;s, and general Tamil Bible dictionaries</p>
+        </div>
+        <ul class="dict-list">
+            <li><a href="சத்திய-வேதாகமப்-பெயர்-அகராதி/"><span class="dict-name">சத்திய வேதாகமப் பெயர் அகராதி</span><span class="dict-meta">Bible names</span></a></li>
+            <li><a href="பரிபூரண-பெயர்ப்-பொக்கிஷம்/"><span class="dict-name">பரிபூரண பரிசுத்த வேதாகமப் பெயர்ப் பொக்கிஷம்</span><span class="dict-meta">Bible names</span></a></li>
+            <li><a href="ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/"><span class="dict-name">ஸ்ட்ராங்க்ஸ் எபிரேய அகராதி</span><span class="dict-meta">Hebrew &middot; Strong&rsquo;s</span></a></li>
+            <li><a href="ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/"><span class="dict-name">ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி</span><span class="dict-meta">Greek &middot; Strong&rsquo;s</span></a></li>
+            <li><a href="tamil-bible-dictionary-by-truth/"><span class="dict-name">Tamil Bible Dictionary by Truth</span><span class="dict-meta">General</span></a></li>
+        </ul>
+    </section>
+
+    <section class="dict-section" aria-labelledby="english-heading">
+        <div class="dict-section-head">
+            <h2 id="english-heading">English</h2>
+            <p>Classic Bible dictionaries and topical references</p>
+        </div>
+        <ul class="dict-list">
+            <li><a href="eastons-bible-dictionary/"><span class="dict-name">Easton&rsquo;s Bible Dictionary</span><span class="dict-meta">General</span></a></li>
+            <li><a href="smiths-bible-dictionary/"><span class="dict-name">Smith&rsquo;s Bible Dictionary</span><span class="dict-meta">General</span></a></li>
+            <li><a href="naves-bible-dictionary/"><span class="dict-name">Nave&rsquo;s Bible Dictionary</span><span class="dict-meta">Topical</span></a></li>
+            <li><a href="thompson-chain-reference/"><span class="dict-name">Thompson Chain Reference</span><span class="dict-meta">Topical</span></a></li>
+            <li><a href="strongs-bible-dictionary/"><span class="dict-name">Strong&rsquo;s Bible Dictionary</span><span class="dict-meta">Hebrew &amp; Greek</span></a></li>
+        </ul>
+    </section>
+
+    <section class="dict-section" aria-labelledby="lexicon-heading">
+        <div class="dict-section-head">
+            <h2 id="lexicon-heading">Greek &amp; Hebrew Lexicons</h2>
+            <p>Scholarly lexicons for original-language study</p>
+        </div>
+        <ul class="dict-list">
+            <li><a href="bdag3-greek-dictionary/"><span class="dict-name">BDAG3 Greek Dictionary</span><span class="dict-meta">Greek</span></a></li>
+            <li><a href="danker-greek-dictionary/"><span class="dict-name">Danker Greek Dictionary</span><span class="dict-meta">Greek</span></a></li>
+            <li><a href="mlsj-greek-dictionary/"><span class="dict-name">MLSJ Greek Dictionary</span><span class="dict-meta">Greek</span></a></li>
+            <li><a href="gr-en-ls-greek-dictionary/"><span class="dict-name">Gr-En-LS Greek Dictionary</span><span class="dict-meta">Liddell-Scott</span></a></li>
+            <li><a href="lxx-green-dictionary/"><span class="dict-name">LXX Green Dictionary</span><span class="dict-meta">Septuagint</span></a></li>
+            <li><a href="bdb-t-bible-dictionary/"><span class="dict-name">BDB-T Bible Dictionary</span><span class="dict-meta">Hebrew</span></a></li>
+            <li><a href="gesenius-hebrew-dictionary/"><span class="dict-name">Gesenius Hebrew Dictionary</span><span class="dict-meta">Hebrew</span></a></li>
+            <li><a href="he-en-b-hebrew-dictionary/"><span class="dict-name">He-En-B Hebrew Dictionary</span><span class="dict-meta">Hebrew + English</span></a></li>
+        </ul>
+    </section>
 </main>
 
 <footer class="site-footer">
