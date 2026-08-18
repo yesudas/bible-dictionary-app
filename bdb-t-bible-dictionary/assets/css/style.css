@@ -60,6 +60,31 @@ a:hover {
     color: var(--accent-dark);
 }
 
+/* Definition link types */
+.definition a.link-bible-reference {
+    color: var(--accent);
+}
+
+.definition a.link-bible-reference:hover {
+    color: var(--accent-dark);
+}
+
+.definition a.link-strongs {
+    color: #1f7a4d;
+}
+
+.definition a.link-strongs:hover {
+    color: #155c39;
+}
+
+.definition a.link-dictionary-word {
+    color: #1a5fb4;
+}
+
+.definition a.link-dictionary-word:hover {
+    color: #134a8c;
+}
+
 button,
 input {
     font: inherit;
