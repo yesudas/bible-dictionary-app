@@ -34,6 +34,7 @@ $dictionaries = [
     "tamil-bible-dictionary-by-truth",
     "strongs-bible-dictionary",
     "பரிபூரண-பெயர்ப்-பொக்கிஷம்",
+    "good-news-வேதாகம-அகராதி",
     "naves-bible-dictionary",
     "thompson-chain-reference",
 ];

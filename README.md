@@ -34,6 +34,7 @@ https://wordofgod.in/bibledictionary
 | `thompson-chain-reference` | English (Thompson Chain Reference) |
 | `சத்திய-வேதாகமப்-பெயர்-அகராதி` | Tamil (Bible names) |
 | `பரிபூரண-பெயர்ப்-பொக்கிஷம்` | Tamil (Bible names — எம். ஜோசப் மோசஸ்) |
+| `good-news-வேதாகம-அகராதி` | Tamil (Bible Dictionary — Good News) |
 | `ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி` | Tamil + Hebrew (Strong's) |
 | `ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி` | Tamil + Greek (Strong's) |
 

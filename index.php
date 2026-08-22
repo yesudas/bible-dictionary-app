@@ -62,6 +62,7 @@ include 'version.php';
         <ul class="dict-list">
             <li><a href="சத்திய-வேதாகமப்-பெயர்-அகராதி/"><span class="dict-name">சத்திய வேதாகமப் பெயர் அகராதி</span><span class="dict-meta">Bible names</span></a></li>
             <li><a href="பரிபூரண-பெயர்ப்-பொக்கிஷம்/"><span class="dict-name">பரிபூரண பரிசுத்த வேதாகமப் பெயர்ப் பொக்கிஷம்</span><span class="dict-meta">Bible names</span></a></li>
+            <li><a href="good-news-வேதாகம-அகராதி/"><span class="dict-name">Good News வேதாகம அகராதி</span><span class="dict-meta">Bible Dictionary</span></a></li>
             <li><a href="ஸ்ட்ராங்க்ஸ்-எபிரேய-அகராதி/"><span class="dict-name">ஸ்ட்ராங்க்ஸ் எபிரேய அகராதி</span><span class="dict-meta">Hebrew &middot; Strong&rsquo;s</span></a></li>
             <li><a href="ஸ்ட்ராங்க்ஸ்-கிரேக்க-அகராதி/"><span class="dict-name">ஸ்ட்ராங்க்ஸ் கிரேக்க அகராதி</span><span class="dict-meta">Greek &middot; Strong&rsquo;s</span></a></li>
             <li><a href="tamil-bible-dictionary-by-truth/"><span class="dict-name">Tamil Bible Dictionary by Truth</span><span class="dict-meta">General</span></a></li>
