@@ -83,6 +83,7 @@ function siteResourceLinks() {
         ['label' => 'Bible App Modules', 'href' => 'https://wordofgod.in/bible-app-modules/', 'external' => true],
         ['label' => 'All Our Resources', 'href' => 'https://wordofgod.in/wog/word-of-god-வெளியீடுகள்-download-all-our-published-materials-free-of-cost/', 'external' => true],
         ['label' => 'Free Christian Resources', 'href' => 'https://wordofgod.in/', 'external' => true],
+        ['label' => 'About Us', 'href' => 'https://www.wordofgodteam.com/', 'external' => true],
     ];
 }
 
@@ -136,7 +137,6 @@ function renderHeader($dictionaryTitle, $pageTitle, $metaDescription, $version) 
         <?php foreach (siteResourceLinks() as $link): ?>
             <?php echo renderLink($link); ?>
         <?php endforeach; ?>
-        <a href="../about.php">About Us</a>
     </nav>
 </header>
     <?php

@@ -35,7 +35,7 @@ include 'version.php';
     <div class="home-topbar-inner">
         <a class="topbar-brand" href="index.php">Bible Dictionaries</a>
         <div class="header-actions">
-            <a class="about-link" href="about.php">About Us</a>
+            <a class="about-link" href="https://www.wordofgodteam.com/" target="_blank" rel="noopener">About Us</a>
             <button id="installAppBtn" type="button">Install App</button>
         </div>
     </div>
@@ -48,7 +48,7 @@ include 'version.php';
         <p class="home-lede">Free English, Tamil, Greek, Hebrew and other language dictionaries for study, preaching, and everyday reading.</p>
         <div class="home-cta">
             <a class="btn-primary" href="#dictionaries">Browse dictionaries</a>
-            <a class="btn-ghost" href="about.php">About the ministry</a>
+            <a class="btn-ghost" href="https://www.wordofgodteam.com/" target="_blank" rel="noopener">About the ministry</a>
         </div>
     </div>
 </section>
